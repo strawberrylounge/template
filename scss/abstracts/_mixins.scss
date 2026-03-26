@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @use "./variables" as v;
 @use "./responsive" as r;
 
@@ -165,4 +167,49 @@
 @function rem($value) {
   $rem-value: calc($value / 16) + rem;
   @return $rem-value;
+}
+
+// scrollbar
+@mixin scrollbar(
+  $thumb-width: 4px,
+  $track-padding: 4px,
+  $thumb-color: v.$gray200,
+  $track-color: transparent
+) {
+  &::-webkit-scrollbar {
+    width: $track-padding * 2 + $thumb-width;
+    height: $track-padding * 2 + $thumb-width;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+    border-radius: ($track-padding * 2 + $thumb-width) * 0.5;
+    background-clip: padding-box;
+    border: $track-padding solid transparent;
+    &:hover {
+      background-color: color.adjust($thumb-color, $lightness: -5%);
+    }
+    &:active {
+      background-color: color.adjust($thumb-color, $lightness: -10%);
+    }
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $track-color;
+  }
+  &::-webkit-scrollbar-corner {
+    background-color: $track-color;
+  }
+  // Firefox
+  @supports (-moz-appearance: none) {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: $thumb-color $track-color;
+    }
+    &:hover {
+      scrollbar-color: color.adjust($thumb-color, $lightness: -5%) $track-color;
+    }
+    &:active {
+      scrollbar-color: color.adjust($thumb-color, $lightness: -10%) $track-color;
+    }
+  }
 }
