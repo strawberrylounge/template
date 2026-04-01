@@ -55,6 +55,16 @@ $(document).ready(function () {
     $(this).toggleClass("opened");
     $(this).next().toggleClass("visible");
   });
+
+  // MOBILE gnb display
+  $(".btn-open-gnb").on("click", function () {
+    $("body").addClass("fixed");
+    $(".gnb").addClass("visible");
+  })
+  $(".btn-close-gnb").on("click", function () {
+    $("body").removeClass("fixed");
+    $(".gnb").removeClass("visible");
+  })
 });
 
 /* 공통 함수 */
