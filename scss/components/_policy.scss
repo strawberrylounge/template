@@ -1,7 +1,7 @@
 // 정책 내 자주 쓰이는 리스트 스타일
 
 // - 어쩌고저쩌고
-ul.line-list {
+ul.list-line {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -21,7 +21,7 @@ ul.line-list {
   }
 }
 // · 어쩌고저쩌고
-ul.dot-list {
+ul.list-dotted {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -35,7 +35,7 @@ ul.dot-list {
   }
 }
 // 스타일 있는 · 어쩌고저쩌고
-ul.dot-list2 {
+ul.list-dotted2 {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -59,7 +59,7 @@ ul.dot-list2 {
   }
 }
 // 가. 어쩌고저쩌고
-ol.korean-list {
+ol.list-korean {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -72,7 +72,7 @@ ol.korean-list {
   }
 }
 // 1) 어쩌고저쩌고
-ol.number-list-parenthesis {
+ol.list-number {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -88,7 +88,7 @@ ol.number-list-parenthesis {
   }
 }
 // 1. 어쩌고저쩌고
-ol.number-list-decimal {
+ol.list-number2 {
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -101,7 +101,7 @@ ol.number-list-decimal {
   }
 }
 // ① 어쩌고저쩌고
-ol.number-list-circle {
+ol.list-number3 {
   display: flex;
   flex-direction: column;
   gap: 2px;
