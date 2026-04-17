@@ -101,6 +101,26 @@ ol.list-number2 {
     word-break: keep-all;
   }
 }
+// 1. 어쩌고저쩌고(counter-reset 버전)
+ol.list-number2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 16px;
+  text-align: left;
+  counter-reset: chapter-list;
+  & > li {
+    display: flex;
+    gap: 0.25em;
+    list-style: none;
+    counter-increment: chapter-list;
+    word-break: keep-all;
+    &::before {
+      content: counter(chapter-list) ".";
+      flex-shrink: 0;
+    }
+  }
+}
 // ① 어쩌고저쩌고
 ol.list-number3 {
   display: flex;

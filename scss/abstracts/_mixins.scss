@@ -114,7 +114,7 @@
       min-height: $height;
       line-height: $height-m;
     }
-    @include r.pc {
+    @include r.desktop {
       width: $width;
       min-width: $width;
       height: $height;
