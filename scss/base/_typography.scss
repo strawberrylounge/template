@@ -34,6 +34,6 @@ a {
   font-weight: font-weight(regular);
   font-size: font-size(body);
   color: $text-color;
-  line-height: 160%;
+  line-height: $line-height;
   letter-spacing: $letter-spacing;
 }
