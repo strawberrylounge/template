@@ -243,6 +243,10 @@ h1 .logo {
 .word-keep-all {
   word-break: keep-all;
 }
+// 줄 바꿈 X
+.word-nowrap {
+  white-space: nowrap;
+}
 
 // 스크롤 X
 .fixed {
