@@ -1,3 +1,14 @@
 @use "../abstracts/index" as *;
 
+// icon
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  vertical-align: middle;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
 // @include icon2x("calendar", 26px, 26px);

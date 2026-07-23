@@ -104,17 +104,6 @@ $name-map: (
 /* =============================================================
 	Image
 ============================================================= */
-// icon
-.icon {
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  vertical-align: middle;
-  text-indent: -9999px;
-  overflow: hidden;
-}
-
 // image
 // 1. img에 직접 크기 조정(로고, 아이콘 등) - width: 320px / height: auto
 // 2. 부모에 크기 + img에 object-fit(썸네일 등 영역을 채워야 할 경우) || aspect-ratio 사용
@@ -150,16 +139,6 @@ h1 .logo {
     width: 236px;
     height: 22px;
     // background: url("#{$img-common}h-logo@2x.png") no-repeat center / contain;
-  }
-}
-
-// 버튼 내 SVG 아이콘 크기 조정
-.btn-icon {
-  @include flexbox(center);
-  svg,
-  img {
-    width: 100%;
-    height: 100%;
   }
 }
 
