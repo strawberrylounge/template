@@ -203,8 +203,9 @@ h1 .logo {
 	Etc
 ============================================================= */
 // display
+// display
+// 태블릿 포함
 .pc-only {
-  // 태블릿 포함
   display: none;
   @include tablet-up {
     display: block;
@@ -214,6 +215,19 @@ h1 .logo {
   display: none;
   @include mobile {
     display: block;
+  }
+}
+// 태블릿 미포함
+.pc-only2 {
+  display: block;
+  @include mobile-tablet {
+    display: none;
+  }
+}
+.m-only2 {
+  display: block;
+  @include desktop {
+    display: none;
   }
 }
 
