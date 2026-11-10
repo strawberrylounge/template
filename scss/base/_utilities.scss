@@ -203,7 +203,6 @@ h1 .logo {
 	Etc
 ============================================================= */
 // display
-// display
 // 태블릿 포함
 .pc-only {
   display: none;
@@ -268,6 +267,9 @@ h1 .logo {
   height: 100%;
   background: rgba($color: color("black"), $alpha: 0.5);
   display: none; // default
+  &.dimmed-object {
+    position: absolute;
+  }
 }
 
 /* =============================================================

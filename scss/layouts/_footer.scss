@@ -126,11 +126,11 @@
         line-height: 36px;
         cursor: pointer;
         &::after {
-          @include i.icon-chevron(
-            $top: 50%,
-            $right: 12px,
-            $color: color(gray700)
-          );
+          // @include i.icon-chevron(
+          //   $top: 50%,
+          //   $right: 12px,
+          //   $color: color(gray700)
+          // );
           transform: translateY(-50%);
         }
 
@@ -148,7 +148,9 @@
           border: 1px solid color(gray900);
           background: color("white");
           overflow-y: auto;
-          transition: height 0.3s ease, opacity 0.3s ease;
+          transition:
+            height 0.3s ease,
+            opacity 0.3s ease;
 
           display: none; // default
         }
