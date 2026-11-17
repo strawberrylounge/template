@@ -62,15 +62,14 @@
     min-width: 0;
     height: calc(#{$row} * #{$line-height}em);
     max-height: none;
+    word-break: keep-all;
+    white-space: nowrap;
   } @else {
     width: $width;
     min-width: 0;
   }
-
   line-height: $line-height;
-  word-break: keep-all;
-  // white-space: nowrap;
-  // overflow: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
 
   @if $hover-visible {
